@@ -71,7 +71,17 @@ nav {
 	}
 
 /* Main */
-body > div > main > .mainContent { order: 3; min-height: 250px; flex: 1; }
+main {
+  	display: flex;
+  	flex-direction: row;
+	margin: 0px;/* orig*/ 
+}
+
+body > div > main > .mainContent { 
+	order: 3; 
+	min-height: 250px; 
+	flex: 1; 
+}
 
 
     #styledportfolioImage {
