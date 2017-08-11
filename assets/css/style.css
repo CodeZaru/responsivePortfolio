@@ -94,16 +94,34 @@ body > div > main > .mainContent {
 #styledportfolioImage {
         float: left;
     }
+/*
+.connectBox{
 
+	flex-direction: row;
+}
+*/
+/*Aside*/
+
+aside {
+display: flex;
+	width: 200px;
+	height: 100px;
+}
 
 /*ConnectBox*/
-body > div > main > .connectBox { order: 4; flex: 0 1 200px; }
+body > div > main > aside> .connectBox { order: 4; flex: 0 1 200px; }
 
-.connectBox {
+aside .connectBox {
+		width: 100px;  /* Or whatever */
+ 		height: 100px; /* Or whatever */
+		margin: auto;  /* Magic! */
 		font-size: 1.5em;
 		float: right;
 		background-color: #4aaaa5;
 		padding: 25px 0;
+		width: 400px;
+		height: 100px;
+}
 	}
 
 
