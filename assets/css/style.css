@@ -89,23 +89,27 @@ body > div > main > .mainContent {
 	background-color: #ffffff;
 }
 
-main .mainContentText {
-	overflow: hidden;
-    /*justify-content: flex-start;*/
+.mainContentText {
+    display: block;
 	margin: 25px 0;
 	background-color: #ffffff;
 	width: 600px;
 }
 
-.mainContentText p {
+.bioImage {
+ float: left;
+}
 
-	line-height: 200%;
+.mainContentText p {
+	border: solid 1px;
+  	display: block;
+
+	line-height: 125%;
 }
 
 #styledportfolioImage {
-       float: left;
-       display: inline;
- 	
+        max-width: 200px;
+        float: left;
     }
 
 
