@@ -15,12 +15,13 @@ body {
 
 /*To forceStickyFooter - end*/
 
-
+/*
 body > div .pageContent {
 	display: flex;
 	flex-flow: row wrap;
 	min-width: 800px;	
 }
+*/
 
 body > div > header,nav,main,aside,footer {
 	background: #CCC; border-radius: 7px; margin: 5px; padding: 20px;
@@ -42,7 +43,7 @@ body > div > header {
 
 
 body > div > header > .headerName { 
-	order: 1; 
+/*	order: 1; */
 	height: 100%; 
 	flex: 0 1 100%; 
 	background-color: #4aaaa5;
@@ -51,7 +52,7 @@ body > div > header > .headerName {
 	font-size: 2.0em;
 	padding: 20px;
 	display: inline-block;
-
+    
 }
 
 
@@ -75,25 +76,54 @@ nav {
 /* Main */
 main {
   	display: flex;
-  	flex-direction: row;
+  	/*flex-direction: row;*/
 	margin: 0px;/* orig*/ 
 	background-color: #CCC;
+
 }
 
 body > div > main > .mainContent { 
-	order: 3; 
+/*	order: 3;*/ 
 	min-height: 250px; 
 	flex: 1; 
-}
-
-.mainContentText {
-	margin: 25px 0;
 	background-color: #ffffff;
 }
 
+main .mainContentText {
+	overflow: hidden;
+    /*justify-content: flex-start;*/
+	margin: 25px 0;
+	background-color: #ffffff;
+	width: 600px;
+}
+
+.mainContentText p {
+
+	line-height: 200%;
+}
+
 #styledportfolioImage {
-        float: left;
+       float: left;
+       display: inline;
+ 	
     }
+
+
+.mainContentH h2 {
+	font-size: 1.75em;
+	color: #4aaaa5;
+	padding-bottom: 30px;
+}
+
+ .hLine {
+	max-width: 590px;
+	height: 3px;
+	background-color: #e2e2e2;
+
+}
+
+
+
 /*
 .connectBox{
 
@@ -102,16 +132,21 @@ body > div > main > .mainContent {
 */
 /*Aside*/
 
-aside {
-display: flex;
+main aside {
+    justify-content: flex-end;
 	width: 200px;
 	height: 100px;
+	float: right;
+
 }
 
 /*ConnectBox*/
-body > div > main > aside> .connectBox { order: 4; flex: 0 1 200px; }
-
-aside .connectBox {
+/*body > div > main > aside> .connectBox { order: 4; flex: 0 1 200px; }
+*/
+main aside .connectBox {
+		display: flex;
+		flex-direction: row;
+        justify-content: flex-end
 		width: 100px;  /* Or whatever */
  		height: 100px; /* Or whatever */
 		margin: auto;  /* Magic! */
@@ -119,12 +154,22 @@ aside .connectBox {
 		float: right;
 		background-color: #4aaaa5;
 		padding: 25px 0;
-		width: 400px;
-		height: 100px;
+		
 }
-	}
+	
+/*
+aside ul li {
+	padding: 0 10px;
+	list-style: none;
+	display: inline-block;
+}
 
-
+.connectBox ul li {
+	padding: 0 10px;
+	list-style: none;
+	display: inline-block;
+}
+*/
 
 /* test
 body > div > main > aside> .connectBox { order: 4; flex: 0 1 200px; }
@@ -136,3 +181,14 @@ body > div > aside { order: 4; flex: 0 1 200px; }
 
 body > div > footer { order: 5; height: 100px; flex: 0 1 100%; }
 
+#styledGithubImage {
+
+    }
+
+#styledLinkedinImage {
+
+   }
+
+ #styledStackoImage {
+
+     }
