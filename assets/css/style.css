@@ -85,8 +85,10 @@ main {
 body > div > main > .mainContent { 
 /*	order: 3;*/ 
 	min-height: 250px; 
+	max-width: 700px;
 	flex: 1; 
 	background-color: #ffffff;
+
 }
 
 .mainContentText {
@@ -103,7 +105,6 @@ body > div > main > .mainContent {
 .mainContentText p {
 	border: solid 1px;
   	display: block;
-
 	line-height: 125%;
 }
 
