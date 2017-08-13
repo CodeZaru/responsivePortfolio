@@ -7,6 +7,9 @@ body {
   	display: flex;
   	flex-direction: column;
 	margin: 0px;/* orig*/ 
+	background-color: #CCC;
+ 
+
 }
 
 .forceStickyFooter {
@@ -23,42 +26,59 @@ body > div .pageContent {
 }
 */
 
-body > div > header,nav,main,aside,footer {
-	background: #CCC; border-radius: 7px; margin: 5px; padding: 20px;
+body > div > nav,main,aside,footer {
+	background: #CCC; border-radius: 0px; margin: 0px; padding: 20px;
 }
 
+header {
+background: #CCC; 
+border-radius: 0px; 
+margin: 0px; 
+padding: 0px 20px 0px 20px;
+
+}
 
 
 
 /* Header */
 
-body > div > header { 
+body > div > header {
+/*display: flex;*/ 
 	order: 1; 
 	height: 100px; 
 	flex: 0 1 100%; 
 	align-items: center;/*Need to figure out how to get the items centered?*/
 	background-color: #ffffff;
+
 }
 
 
 
 body > div > header > .headerName { 
+	display: inline-flex;
 /*	order: 1; */
-	height: 100px; 
-	flex: 0 1 100%; 
+	height: 100%; 
+/*	flex: 0 1 100%;*/ 
+	width: 200px;
 	background-color: #4aaaa5;
 	color: #ffffff;
 	text-align: center;
 	font-size: 2.0em;
 	padding: 0px;
-	display: inline-block;
-    
+    vertical-align: center;
+	
+}
+
+.headerName {
+	display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /* Navbar */
 
-body > div > header > nav { order: 2; flex: 0 1 200px; }
+body > div > header > nav { order: 2; flex: 0 1 200px;}
 
 nav ul li {
 	padding: 0 10px;
@@ -67,9 +87,9 @@ nav ul li {
 }
 
 nav {
-		font-size: 1.5em;
+		font-size: 1.0em;
 		float: right;
-		padding: 25px 0;
+		padding: 25px 200px 25px 0;
 		background-color: #ffffff;
 	}
 
@@ -79,6 +99,8 @@ main {
   	/*flex-direction: row;*/
 	margin: 0px;/* orig*/ 
 	background-color: #CCC;
+	padding: 20px 20px 20px 200px;
+ 
 
 }
 
@@ -91,11 +113,21 @@ body > div > main > .mainContent {
 
 }
 
+body > div > main > .mainContentContact { 
+/*	order: 3;*/ 
+	min-height: 250px; 
+	max-width: 650px;
+	flex: 1; 
+	background-color: #ffffff;
+	padding: 25px;
+
+}
+
 .mainContentText {
     display: block;
 	margin: 25px 0;
 	background-color: #ffffff;
-	width: 600px;
+	width: 700px;
 }
 
 .bioImage {
@@ -104,7 +136,7 @@ body > div > main > .mainContent {
 }
 
 .mainContentText p {
-	border: solid 1px;
+/*	border: solid 1px;*/
   	display: block;
 	line-height: 125%;
 	padding: 25px;
@@ -145,6 +177,10 @@ main aside {
 	max-height: 500px;
 }
 
+aside{
+	padding: 0 100px 0 25px;
+}
+
 
 .connectBoxHeader h2 {
 	width: 200px;
@@ -178,29 +214,33 @@ main aside .connectBox {
 	background-color: #e2e2e2;	
 }
 
-/*
-aside ul li {
-	padding: 0 10px;
-	list-style: none;
-	display: inline-block;
+#contact-button {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	padding: 15px;
+	max-width: 100px;
 }
 
-.connectBox ul li {
-	padding: 0 10px;
-	list-style: none;
-	display: inline-block;
+#contact-button:hover {
+	background-color: #5E7F7E;
+
 }
-*/
 
-/* test
-body > div > main > aside> .connectBox { order: 4; flex: 0 1 200px; }
-*/
+#contact-button a {
 
-/* orig
-body > div > aside { order: 4; flex: 0 1 200px; }
-*/
+	color: #ffffff;
+	text-decoration: none;
+}
 
 body > div > footer { order: 5; height: 100px; flex: 0 1 100%; }
+
+footer{
+	background-color: #666666;
+	border-top: 4px solid #4aaaa5;
+	margin: 50px 0 0 0;
+}
 
 #styledGithubImage {
 
@@ -213,3 +253,60 @@ body > div > footer { order: 5; height: 100px; flex: 0 1 100%; }
  #styledStackoImage {
 
      }
+
+ header {
+	padding: 0px 0px 0px 200px;
+}
+
+
+/*Portfolio Styling*/
+.portfolio {
+	max-width: 650px;
+	margin: 30px auto;
+
+}
+
+
+
+.portfolioBox {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+
+        justify-content: center;
+		width: 700px;  /* Or whatever */
+ 		height: 1500px; /* Or whatever */
+		margin: auto;  /* Magic! */
+		font-size: 1.5em;
+		float: right;
+		background-color: #ffffff;
+		padding: 200;
+		
+}
+
+#hangman {
+		padding: 25px;
+
+
+}
+
+#rPG {
+		padding: 25px;
+
+}
+
+#trivia {
+		padding: 25px;
+
+}
+
+#rutgers {
+		padding: 25px;
+
+}
+
+#rockPaperScissors {
+		padding: 25px;
+
+}
+
