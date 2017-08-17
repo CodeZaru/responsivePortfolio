@@ -22,36 +22,36 @@ div .headerName {
 }
 
 
-  nav {
-    font-size: 1em;
-    float: right;
-    padding: 30px 0;
-  }
+nav {
+  font-size: 1em;
+  float: right;
+  padding: 30px 0;
+}
 
-  nav ul li {
-    padding: 0 5px;
-    list-style: none;
-    display: inline-block;
-  }
+nav ul li {
+  padding: 0 5px;
+  list-style: none;
+  display: inline-block;
+}
 
-  nav li a {
-    text-decoration: none;
-    color: #777777;
+nav li a {
+  text-decoration: none;
+  color: #777777;
 
-  }
+}
 
-  nav li a:hover {
-    color: #4aaaa5;
-  } 
-    
-  nav li a.selected:visited {
-    color: #4aaaa5;
-    font-weight: bold;
-  }
+nav li a:hover {
+  color: #4aaaa5;
+} 
 
-  .spacer {
-    color: #e2e2e2;
-  }
+nav li a.selected:visited {
+  color: #4aaaa5;
+  font-weight: bold;
+}
+
+.spacer {
+  color: #e2e2e2;
+}
 
 
 
@@ -66,8 +66,8 @@ body {
   color: #777;
   background: #777;
  }
-*/
-#mainBodyContainer {
+ */
+ #mainBodyContainer {
   max-width: 960px;
   margin: 40px auto;
 }  
@@ -143,8 +143,8 @@ aside {
 
 .connectBox {
   display:flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .connectBoxHeader {
@@ -176,16 +176,16 @@ aside {
 
 
 header {
-width: 100%;
-max-width: 960px;
-margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 section {
   display: block;
   float: left;
   width: 495px;
- /* height: 267px; */
+  /* height: 267px; */
   overflow: hidden;
 }
 
@@ -237,6 +237,74 @@ html, body {
 /*media queries*/
 
 @media screen and (max-width: 980px) {
-body {
-  background-color: #333;
-} 
+  body {
+    background-color: #333;
+  } 
+  #mainBodyContainer {
+
+  width: 75%;
+  margin: 0 auto;
+}  
+
+ #mainContent {
+
+  width: 75%;
+  margin: 0 auto;
+}
+
+}
+
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: #ffffff;
+    }
+#mainBodyContainer {
+
+  width: 75%;
+  margin: 0 auto;
+}  
+
+ #mainContent {
+
+  width: 75%;
+  margin: 0 auto;
+}
+
+aside {
+
+  width: 75%;
+  margin: 0 auto;
+  float: center;
+}
+
+  }
+
+
+    @media screen and (max-width: 640px) {
+    
+header { position: static;
+    }
+
+    body {
+      background-color: #333;
+    }
+#mainBodyContainer {
+
+  width: 75%;
+  margin: 0 auto;
+}  
+
+ #mainContent {
+
+  width: 75%;
+  margin: 0 auto;
+}
+
+aside {
+
+  width: 75%;
+  margin: 0 auto;
+float: center;
+}
+
+  }
