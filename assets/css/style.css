@@ -8,8 +8,8 @@ body {
   	flex-direction: column;
 	margin: 0px;/* orig*/ 
 	background-color: #CCC;
- 
-
+	width: 960px; 
+    justify-content: center; 
 }
 
 .forceStickyFooter {
@@ -310,3 +310,12 @@ footer{
 
 }
 
+@media screen and (max-width: 980px) {
+body {
+	background-color: #333;
+}	
+
+.wrapper {
+	width: 
+}
+}
