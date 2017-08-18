@@ -1,321 +1,340 @@
-/*To forceStickyFooter - start*/
-html, body {
-  height: 100%;
-}
-
-body {
-  	display: flex;
-  	flex-direction: column;
-	margin: 0px;/* orig*/ 
-	background-color: #CCC;
-	width: 960px; 
-    justify-content: center; 
-}
-
-.forceStickyFooter {
-  flex: 1 0 auto;
-}
-
-/*To forceStickyFooter - end*/
-
-/*
-body > div .pageContent {
-	display: flex;
-	flex-flow: row wrap;
-	min-width: 800px;	
-}
-*/
-
-body > div > nav,main,aside,footer {
-	background: #CCC; border-radius: 0px; margin: 0px; padding: 20px;
-}
-
-header {
-background: #CCC; 
-border-radius: 0px; 
-margin: 0px; 
-padding: 0px 20px 0px 20px;
+#headerContainer {
+  background-color: #ffffff;'
+  max-width: 100%;
+  height: auto;
+  border-bottom: 2px solid #cccccc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
 }
 
-
-
-/* Header */
-
-body > div > header {
-/*display: flex;*/ 
-	order: 1; 
-	height: 100px; 
-	flex: 0 1 100%; 
-	align-items: center;/*Need to figure out how to get the items centered?*/
-	background-color: #ffffff;
+div .headerName {
+  background-color: #4aaaa5;
+  max-width: 275px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.75em;
+  padding: 25px;
+  height: auto;
+  display: inline-block;
 
 }
 
-
-
-body > div > header > .headerName { 
-	display: inline-flex;
-/*	order: 1; */
-	height: 100%; 
-/*	flex: 0 1 100%;*/ 
-	width: 200px;
-	background-color: #4aaaa5;
-	color: #ffffff;
-	text-align: center;
-	font-size: 2.0em;
-	padding: 0px;
-    vertical-align: center;
-	
-}
-
-.headerName {
-	display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* Navbar */
-
-body > div > header > nav { order: 2; flex: 0 1 200px;}
-
-nav ul li {
-	padding: 0 10px;
-	list-style: none;
-	display: inline-block;
-}
 
 nav {
-		font-size: 1.0em;
-		float: right;
-		padding: 25px 200px 25px 0;
-		background-color: #ffffff;
-	}
+  font-size: 1em;
+  float: right;
+  padding: 30px 0;
+}
 
-/* Main */
-main {
-  	display: flex;
-  	/*flex-direction: row;*/
-	margin: 0px;/* orig*/ 
-	background-color: #CCC;
-	padding: 20px 20px 20px 200px;
- 
+nav ul li {
+  padding: 0 5px;
+  list-style: none;
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #777777;
 
 }
 
-body > div > main > .mainContent { 
-/*	order: 3;*/ 
-	min-height: 250px; 
-	max-width: 700px;
-	flex: 1; 
-	background-color: #ffffff;
+nav li a:hover {
+  color: #4aaaa5;
+} 
 
+nav li a.selected:visited {
+  color: #4aaaa5;
+  font-weight: bold;
 }
 
-body > div > main > .mainContentContact { 
-/*	order: 3;*/ 
-	min-height: 250px; 
-	max-width: 650px;
-	flex: 1; 
-	background-color: #ffffff;
-	padding: 25px;
+.spacer {
+  color: #e2e2e2;
+}
+
+
+
+
+/*
+body {
+  width: 960px;
+  margin: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: #777;
+ }
+ */
+ #mainBodyContainer {
+  max-width: 960px;
+  margin: 40px auto;
+}  
+.mainContent {
+
+  max-width: 590px;
+  background-color: #ffffff;
+  padding: 40px 29px;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #dddddd;
+}
+
+
+.mainContentHeader h2 {
+  font-size: 1.75em;
+  color: #4aaaa5;
+  padding-bottom: 30px;
+}
+
+.bioHorizontalLine {
+  max-width: 590px;
+  height: 3px;
+  background-color: #e2e2e2;
 
 }
 
 .mainContentText {
-    display: block;
-	margin: 25px 0;
-	background-color: #ffffff;
-	width: 700px;
+  margin: 30px 0;
 }
 
+.mainContentText img {
+
+  max-width: 200px;
+  float: left;
+  margin-right: 30px;
+
+}
+
+.mainContentText p {
+
+  line-height: 200%;
+}
+
+
+ .hLine {
+  max-width: 590px;
+  height: 3px;
+  background-color: #e2e2e2;
+
+}
+
+
+/*
+header,
+nav,
+section,
+aside,
+footer {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background: #ebebeb;
+}
+*/
 .bioImage {
  float: left;
  padding: 25px 5px 5px 25px;
 }
 
-.mainContentText p {
-/*	border: solid 1px;*/
-  	display: block;
-	line-height: 125%;
-	padding: 25px;
+aside {
+  max-width: 270px;
+  background-color: #ffffff;
+  padding: 40px 32px;
+  overflow: hidden;
+  float: right;
+  display: inline-block;
+  border: 1px solid #dddddd;
 }
 
-#styledportfolioImage {
-        max-width: 200px;
-        float: left;
-    }
-
-
-.mainContentH h2 {
-	font-size: 1.75em;
-	color: #4aaaa5;
-	padding-bottom: 30px;
+.connectBox {
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
- .hLine {
-	max-width: 590px;
-	height: 3px;
-	background-color: #e2e2e2;
+.connectBoxHeader {
+  font-size: 1.125em;
+  text-align: center;
+  color: #4aaaa5;
+  padding-bottom: 20px;
+}
+
+.connectBoxHorizontalLine {
+
+  height: 1px;
+  max-width: 100%;
+  background-color: #eeeeee;
+}
+
+.connectBox img {
+
+  max-width: 65px;
+
+  padding: 15px 0;
 
 }
 
+.connectBox li {
+ display: inline-block;
 
-
-/*
-.connectBox{
-
-	flex-direction: row;
-}
-*/
-/*Aside*/
-
-main aside {
-	float: right;
-	max-width: 300px;
-	max-height: 500px;
-}
-
-aside{
-	padding: 0 100px 0 25px;
 }
 
 
-.connectBoxHeader h2 {
-	width: 200px;
-	max-height: 500px;
-	font-size: 1.75em;
-	color: #4aaaa5;
-	background-color: #ffffff;
-	padding-bottom: 30px;
+header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-/*ConnectBox*/
-/*body > div > main > aside> .connectBox { order: 4; flex: 0 1 200px; }
-*/
-main aside .connectBox {
-		display: flex;
-		flex-direction: row;
-        justify-content: center;
-		width: 200px;  /* Or whatever */
- 		height: 100px; /* Or whatever */
-		margin: auto;  /* Magic! */
-		font-size: 1.5em;
-		float: right;
-		background-color: #ffffff;
-		padding: 25px 0;
-		
+section {
+  display: block;
+  float: left;
+  width: 495px;
+  /* height: 267px; */
+  overflow: hidden;
 }
 
-.hLineConnectBox {
-	max-width: 590px;
-	height: 3px;
-	background-color: #e2e2e2;	
+aside {
+  display: block;
+  float: right;
+  width: 40%;
+  height: 267px;
+  overflow: hidden;
 }
+
+article {
+  padding: 10px;
+  color: #777;
+  background: #ffffff;
+}
+
+.clear {
+  clear: both;
+}
+
+h1,
+p {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  color: #777;
+  text-align: center;
+  background: #ffffff;
+}
+
 
 #contact-button {
-	background-color: #4aaaa5;
-	color: #ffffff;
-	text-align: center;
-	font-weight: bold;
-	padding: 15px;
-	max-width: 100px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+  max-width: 100px;
 }
 
 #contact-button:hover {
-	background-color: #5E7F7E;
+  background-color: #5E7F7E;
 
 }
 
 #contact-button a {
 
-	color: #ffffff;
-	text-decoration: none;
-}
-
-body > div > footer { order: 5; height: 100px; flex: 0 1 100%; }
-
-footer{
-	background-color: #666666;
-	border-top: 4px solid #4aaaa5;
-	margin: 50px 0 0 0;
-}
-
-#styledGithubImage {
-
-    }
-
-#styledLinkedinImage {
-
-   }
-
- #styledStackoImage {
-
-     }
-
- header {
-	padding: 0px 0px 0px 200px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 
-/*Portfolio Styling*/
-.portfolio {
-	max-width: 650px;
-	margin: 30px auto;
-
+/*sticky footer*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 50px;
+  margin-top: -50px;
 }
 
-
-
-.portfolioBox {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-
-        justify-content: center;
-		width: 700px;  /* Or whatever */
- 		height: 1500px; /* Or whatever */
-		margin: auto;  /* Magic! */
-		font-size: 1.5em;
-		float: right;
-		background-color: #ffffff;
-		padding: 200;
-		
-}
-
-#hangman {
-		padding: 25px;
-
-
-}
-
-#rPG {
-		padding: 25px;
-
-}
-
-#trivia {
-		padding: 25px;
-
-}
-
-#rutgers {
-		padding: 25px;
-
-}
-
-#rockPaperScissors {
-		padding: 25px;
-
-}
+/*media queries*/
 
 @media screen and (max-width: 980px) {
-body {
-	background-color: #333;
-}	
+  body {
+    background-color: #333;
+  } 
+  #mainBodyContainer {
 
-.wrapper {
-	width: 
+  width: 75%;
+  margin: 0 auto;
+}  
+
+ #mainContent {
+
+  width: 75%;
+  margin: 0 auto;
 }
+
 }
+
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: #ffffff;
+    }
+#mainBodyContainer {
+
+  width: 75%;
+  margin: 0 auto;
+}  
+
+ #mainContent {
+
+  width: 75%;
+  margin: 0 auto;
+}
+
+aside {
+
+  width: 75%;
+  margin: 0 auto;
+  float: center;
+}
+
+  }
+
+
+    @media screen and (max-width: 640px) {
+    
+header { position: static;
+    }
+
+    body {
+      background-color: #333;
+    }
+#mainBodyContainer {
+
+  width: 75%;
+  margin: 0 auto;
+}  
+
+ #mainContent {
+
+  width: 75%;
+  margin: 0 auto;
+}
+
+aside {
+
+  width: 75%;
+  margin: 0 auto;
+float: center;
+}
+
+  }

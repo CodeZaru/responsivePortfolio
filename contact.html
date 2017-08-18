@@ -1,52 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 <head>
-	<title>Kevin Sullivan</title>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- Viewport refers to the display being used to view the website. 
 
+	 By default, mobile devices with small screen, high resolution viewports may render content at a typical desktop screen ratio (scaled down at the smaller screen size).
 
+	 We can specify that a web page should scale its content to the width of its current viewport using a `meta` tag.-->
 
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	<title>Contact</title>
+	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-<div class="forceStickyFooter">
+	<div class="content">
+		<div class="content-inside">
+			<div id="headerContainer">
 
+				<header>
+					<div class="headerName">
+						<div class="centerName">
+							Kevin Sullivan
+						</div>
+					</div>
+					<nav>
 
-	<header>
+						<div class="pageNav">
 
-			<div class="headerName">
-			<div class="centerName">
-			Kevin Sullivan</div>
+							<ul>
+								<li><a href="index.html">About</a></li>
+								<li class="pipe">|</li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li class="pipe">|</li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+
+						</div>
+
+					</nav>
+
+				</header>
+
 			</div>
 
-			<nav>
-				<div class="pageNav">
+			<div id="mainBodyContainer">
 
-					<ul>
-						<li><a href="index.html">About</a></li>
-						<li class="pipe">|</li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li class="pipe">|</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-
-				</div>
-			</nav>
-
-	</header>
-<!--
-<div class="pageContent">
--->		
-			
-<main>
+				<section class="mainContent">
+					<div class="mainContentHeader">
+						<heading>
+							<h1>About Me</h1>
+						</heading>	
+					</div>
 	<div class="mainContentContact">
 		<!--<Section class ="mainContentText">-->
-				<div class="mainContentH">
+	<!--			<div class="mainContentH">
 				<h2>Contact</h2>
-			</div>
+			</div>  -->
 			<div class="hLine"></div>	
+			
 			<div class="mainContentHeader">
 				<h2>Contact</h2>
 			</div>
@@ -63,32 +76,34 @@
 				<div id="contact-button"><a href="#">Submit</a></div>
 			</div>
 	</div>
-		
-	<aside>
+					</section>
 
-		
-			<div class="connectBoxHeader">
-				<h2>Connect with Me</h2>
+					<aside>
+
+
+						<div class="connectBoxHeader">
+							<h2>Connect with Me</h2>
+						</div>
+
+						<div class="connectBoxHorizontalLine"></div>
+
+						<div class="connectBox">
+							<a id="styledGithubImage" href="https://github.com/" target="_blank"><img src="assets/images/github.png" alt="GitHub"  width="50" height="50"/></a>
+							<a id="styledLinkedinImage" href="https://www.linkedin.com/in//" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedin" width="50" height="50"/></a>
+							<a href="https://stackoverflow.com/" target="_blank"><img id="styledStacloImage" src="assets/images/stackoverflow.png" alt="StackOverflow"  width="50" height="50"/></a>
+						</div>
+					</aside>
+
+					<div class="clear"></div>
+
+				</div>
 			</div>
+		</div>
+		<div id="footerContainer">
+			<footer>
+				<p>Copyright 2017</p>
+			</footer>
+		</div>
 
-			<div class="hLineConnectBox"></div>
-
-			<div class="connectBox">
-					<a id="styledGithubImage" href="https://github.com/" target="_blank"><img src="assets/images/github.png" alt="GitHub"  width="50" height="50"/></a>
-					<a id="styledLinkedinImage" href="https://www.linkedin.com/in//" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedin" width="50" height="50"/></a>
-					<a href="https://stackoverflow.com/" target="_blank"><img id="styledStacloImage" src="assets/images/stackoverflow.png" alt="StackOverflow"  width="50" height="50"/></a>
-			</div>
-	</aside>
-
-</main>
-
-	
-<!--	
-</div>
--->
-</div>
-
-  <footer class="footer"><center>Copyright 2017 Kevin Sullivan</center></footer>
-
-</body>
-</html>
+	</body>
+	</html>
