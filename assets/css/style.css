@@ -225,6 +225,16 @@ p {
   background: #ffffff;
 }
 
+/*test this next block*/
+.mainContentContact { 
+/*  order: 3;*/ 
+  min-height: 250px; 
+  max-width: 650px;
+  flex: 1; 
+  background-color: #ffffff;
+  padding: 25px;
+
+}
 
 #contact-button {
   background-color: #4aaaa5;
